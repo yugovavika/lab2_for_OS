@@ -1,0 +1,15 @@
+D:\ОС\2 lab\OSka\bin\Release\net8.0\OSka.exe
+D:\ОС\2 lab\OSka\bin\Release\net8.0\OSka.deps.json
+D:\ОС\2 lab\OSka\bin\Release\net8.0\OSka.runtimeconfig.json
+D:\ОС\2 lab\OSka\bin\Release\net8.0\OSka.dll
+D:\ОС\2 lab\OSka\bin\Release\net8.0\OSka.pdb
+D:\ОС\2 lab\OSka\obj\Release\net8.0\OSka.GeneratedMSBuildEditorConfig.editorconfig
+D:\ОС\2 lab\OSka\obj\Release\net8.0\OSka.AssemblyInfoInputs.cache
+D:\ОС\2 lab\OSka\obj\Release\net8.0\OSka.AssemblyInfo.cs
+D:\ОС\2 lab\OSka\obj\Release\net8.0\OSka.csproj.CoreCompileInputs.cache
+D:\ОС\2 lab\OSka\obj\Release\net8.0\OSka.dll
+D:\ОС\2 lab\OSka\obj\Release\net8.0\refint\OSka.dll
+D:\ОС\2 lab\OSka\obj\Release\net8.0\OSka.pdb
+D:\ОС\2 lab\OSka\obj\Release\net8.0\OSka.genruntimeconfig.cache
+D:\ОС\2 lab\OSka\obj\Release\net8.0\ref\OSka.dll
+D:\ОС\2 lab\OSka\obj\Release\net8.0\OSka.csproj.Up2Date
