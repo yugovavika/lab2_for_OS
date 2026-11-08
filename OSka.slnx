@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="../OSka.Tests/OSka.Tests.csproj" Id="7ace026d-8d07-4066-b7de-0cd0daa122f1" />
   <Project Path="OSka.csproj" />
 </Solution>

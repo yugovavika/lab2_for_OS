@@ -9,7 +9,7 @@ using System.Threading;
 
 namespace OSka
 {
-    internal static class MatrixTasks
+    public static class MatrixTasks
     {
         private static int completedRows;
         private static int lastPercent;
@@ -275,21 +275,16 @@ namespace OSka
                 "matrices_" + Guid.NewGuid().ToString()
                 + ".bin");
 
-            string? executablePath = Environment.ProcessPath;
-
-            if (string.IsNullOrEmpty(executablePath))
-            {
-                Console.WriteLine(
-                    "Не удалось определить путь программы.");
-                return false;
-            }
+            string executablePath =
+    typeof(MatrixTasks).Assembly.Location;
 
             try
             {
                 ProcessStartInfo startInfo =
                     new ProcessStartInfo();
 
-                startInfo.FileName = executablePath;
+                startInfo.FileName = "dotnet";
+                startInfo.ArgumentList.Add(executablePath);
                 startInfo.UseShellExecute = false;
 
                 startInfo.ArgumentList.Add("--generate");
@@ -1133,7 +1128,7 @@ namespace OSka
             int totalRows = (power - 1) * rows;
             Interlocked.Exchange(ref completedRows, 0);
 
-            lock (progressLock)
+            lock (progressLockLocal)
             {
                 lastPercent = 0;
             }
@@ -1236,7 +1231,7 @@ namespace OSka
                             ref completedRows);
                         percent = completed * 100 / data.TotalRows;
 
-                        lock (progressLock)
+                        lock (data.ProgressLock)
                         {
                             if (percent > lastPercent)
                             {
